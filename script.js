@@ -21,7 +21,7 @@ async function checkweather(city) {
 
         document.querySelector(".humidity").innerHTML = `${data.main.humidity}%`;
 
-        document.querySelector("#icon").src = `/images/${data.weather[0].main}.png`;
+        document.querySelector("#icon").src = `./images/${data.weather[0].main}.png`;
 
        
         document.querySelector(".weather").style.display = "block";

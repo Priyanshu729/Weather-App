@@ -1,4 +1,4 @@
-const apikey = "09e79eaf2984514c8c52f6e965117b8e"
+er-APPconst apikey = "09e79eaf2984514c8c52f6e965117b8e"
 const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchinput = document.getElementById("input1");
 const searchbtn = document.getElementById("btn");
@@ -21,7 +21,7 @@ async function checkweather(city) {
 
         document.querySelector(".humidity").innerHTML = `${data.main.humidity}%`;
 
-        document.querySelector("#icon").src = `images/${data.weather[0].main}.png`;
+        document.querySelector("#icon").src = `Weather-App/images/${data.weather[0].main}.png`;
 
        
         document.querySelector(".weather").style.display = "block";

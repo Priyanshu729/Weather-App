@@ -12,7 +12,7 @@ async function checkweather(city,ans) {
     else {
         const data = await response.json();
 
-        document.querySelector(".temp").innerHTML = `${Math.round(data.main.temp)}°${ans}`;
+        document.querySelector(".temp").innerHTML = `${Math.round(data.main.temp)}${ans}`;
 
         document.querySelector(".desc").innerHTML = (data.weather[0].description)[0].toUpperCase() + data.weather[0].description.slice(1);
         document.querySelector(".temp2").innerHTML = data.name;

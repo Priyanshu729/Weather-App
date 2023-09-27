@@ -42,7 +42,19 @@
 }.search button img{
     width:19px;
     height:19px;
-}.weather{
+}select{
+    margin: 10px;
+    border:none;
+    padding: 10px 20px;
+    border-radius:5px;
+    background:#5f88d4 ;
+  }
+  
+  select:focus{
+    outline:none;
+  }
+
+.weather{
     margin: 20px 20px 0px 20px;
     padding: 5px;
     width: 86%;
@@ -82,8 +94,10 @@
 }.weather{
     display: none;
 }.error{
-    text-align: left;
-    margin-left: 10px;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 10px;
     display: none;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
 }

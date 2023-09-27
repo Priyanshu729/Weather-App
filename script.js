@@ -41,7 +41,7 @@ searchbtn.addEventListener("click", () => {
     }else{
         const answer=document.getElementById("weather1");
         checkweather(searchinput.value,answer.value);
-        checkweather(searchinput.value);
+        
     }
     
     

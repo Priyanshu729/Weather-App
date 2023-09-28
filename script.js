@@ -45,6 +45,7 @@ searchbtn.addEventListener("click", () => {
     if(searchinput.value==""){
         
         document.querySelector(".error").innerHTML = "Please Enter City Name";//display error message
+        document.querySelector(".weather").style.display = "none";
         document.querySelector(".error").style.display = "block";
         
     }else{

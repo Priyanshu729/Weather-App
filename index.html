@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+      
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Weather-App</title>
+</head>
+<body>
+    <div class="head">
+        
+        <h2>Weather App</h2>
+        <div class="search">
+            <input id="input1" type="text" placeholder="Enter your city">
+            <button id="btn"><img src="images/search.png"></button>
+        </div>
+        <label for="weather1">Different Weather?</label>
+        <select name="weather1" id="weather1">
+          <option value="°F">Imperial °F </option>
+          <option value="°C">Metric °C</option>
+        </select>
+        <button id="location" title="Use Current Location"><i class="fa-solid fa-location-arrow fa-xl"></i></button>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        <div class="weather">
+            <img  id="icon" src="images/rain.png">
+            <h1 class="temp">22°C</h1>
+            <p class="desc">Overcast<p>
+            <h2 class="temp2">Delhi</h2>
+            <div class="details">
+                <div class="col1">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">54%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col1">
+                    <img src="images/wind.png">
+                <div>
+                    <p class="wind">56Km/h</p>
+                <p>Wind Speed</p>
+                </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    
+    
+</body>
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+<script src="script.js"></script>
+</html>
